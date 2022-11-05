@@ -6,7 +6,7 @@
 trigger: 'none'
 
 pool:
-  vmImage: 'windows-2019'
+  vmImage: 'windows-2016'
 
 variables:
   solution: '**/*.sln'
@@ -23,7 +23,7 @@ steps:
 - task: VSBuild@1
   inputs:
     solution: '$(solution)'
-    msbuildArgs: '/p:SkipInvalidConfigurations=true /p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfiguratons=true /p:PackageLocation="$(build.stagingDirectory)" /p:IncludeServerNameBuildInfo=True /p:GenerateBuildConfigfile=true /p:BuildSymbolStorePath="$(SymbolPath)" /p:ReferencePath="C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Extensions\Microsoft\Pex"'
+    msbuildArgs: '/p:SkipInvalidConfigurations=true /p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfiguratons=true /p:PackageLocation="$(build.stagingDirectory)" /p:IncludeServerNameBuildInfo=True /p:GenerateBuildConfigfile=true /p:BuildSymbolStorePath="$(SymbolPath)" /p:ReferencePath="C:\Program Files (x86)\Microsoft Visual Studio\2016\Enterprise\Common7\IDE\Extensions\Microsoft\Pex"'
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
