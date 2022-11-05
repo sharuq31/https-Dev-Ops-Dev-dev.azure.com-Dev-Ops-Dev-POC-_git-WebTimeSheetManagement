@@ -22,10 +22,15 @@ steps:
     projects: '**/WebTimeSheetManagement.csproj'
 
 - task: DotNetCoreCLI@2
-  displayName: Build Web App
   inputs:
+    command: 'build'
     projects: '**/WebTimeSheetManagement.csproj'
     arguments: '--configuration $(BuildConfiguration)'
+# - task: DotNetCoreCLI@2
+#   displayName: Build Web App
+#   inputs:
+#     projects: '**/WebTimeSheetManagement.csproj'
+#     arguments: '--configuration $(BuildConfiguration)'
 
 - task: DotNetCoreCLI@2
   displayName: Run Unit Tests
