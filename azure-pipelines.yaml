@@ -31,6 +31,18 @@ steps:
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
+
+- task: DotNetCoreCLI@2
+  displayName: Restore Nuget Packages
+  inputs:
+    command: restore
+    projects: '**/WebTimeSheetManagement.csproj'
+
+- task: DotNetCoreCLI@2
+  displayName: Build Web App
+  inputs:
+    projects: '**/WebTimeSheetManagement.csproj'
+    arguments: '--configuration $(BuildConfiguration)'
     
 - task: DotNetCoreCLI@2
   inputs:
