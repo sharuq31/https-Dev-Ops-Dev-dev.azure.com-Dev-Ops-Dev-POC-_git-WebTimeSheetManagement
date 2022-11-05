@@ -410,9 +410,9 @@
     <Content Include="Template\vendor\flot\jquery.js" />
     <Content Include="Template\vendor\font-awesome\css\font-awesome.css" />
     <Content Include="Template\vendor\font-awesome\css\font-awesome.min.css" />
-    <Content Include="Template\vendor\jquery-easing\jquery.easing.compatibility.js" />
+    <!-- <Content Include="Template\vendor\jquery-easing\jquery.easing.compatibility.js" />
     <Content Include="Template\vendor\jquery-easing\jquery.easing.js" />
-    <Content Include="Template\vendor\jquery-easing\jquery.easing.min.js" />
+    <Content Include="Template\vendor\jquery-easing\jquery.easing.min.js" /> -->
     <Content Include="Template\vendor\jquery\jquery.js" />
     <Content Include="Template\vendor\jquery\jquery.min.js" />
     <Content Include="Template\vendor\metisMenu\metisMenu.css" />
